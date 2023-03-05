@@ -22,3 +22,30 @@ contains:
 - two csv files to feed data to the model
 - a Dockerfile
 - a .py app for the api
+
+
+here is an example querry to test the /predict endpoint:
+
+import requests
+
+payload = {
+  "model_key": "Citroen",
+  "mileage": 140411,
+  "engine_power": 100,
+  "fuel": "diesel",
+  "paint_color": "black",
+  "car_type": "convertible",
+  "private_parking_available": True,
+  "has_gps": True,
+  "has_air_conditioning": False,
+  "automatic_car": False,
+  "has_getaround_connect": True,
+  "has_speed_regulator": True,
+  "winter_tires": True
+}
+
+response = requests.post("https://getaroundapi369.herokuapp.com/predict", json=payload)
+
+response.text
+
+this shloud return : '{"prediction":117.02883761383585}'
