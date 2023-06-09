@@ -1,15 +1,5 @@
 # Bloc 5 - Industrialisation d'un algorithme d'apprentissage automatique et automatisation des processus de décision
 
-Video explanation :
-
-https://share.vidyard.com/watch/7kChN1CTbtA1Z6iZPfE3yy?
-
-email :
-
-ymilo.certification@protonmail.com
-
-This bloc contains two files :
-
 ## getaround_streamlit
 
 file for the streamlit dash board accessible at : https://getaround369.herokuapp.com/
